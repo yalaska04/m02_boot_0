@@ -36,6 +36,8 @@ funciones = {
     'med': media
 }
 
+# función de primer nivel que me devuelve una función.
+
 def returnF(nombre):
     nombre = nombre.lower()
     if nombre.lower() in funciones.keys():
@@ -46,4 +48,5 @@ def returnF(nombre):
 print(maxi(1,3,-1,15,9))
 print(mini(1,3,-1,15,9))
 print(media(1,3,-1,15,9))
+
 print(returnF('max')(1,3,-1,15,9))
